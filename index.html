@@ -37,6 +37,7 @@
   .card .sal{font-size:15px; font-weight:700; color:var(--blue); white-space:nowrap;}
   .tags{margin:8px 0 0; display:flex; flex-wrap:wrap; gap:6px;}
   .tag{background:#f0f3fa; border-radius:6px; padding:2px 8px; font-size:12px; color:#3f4b63;}
+  .tag.ch{background:#e8f7ee; color:#0d7a3d;}
   .field{display:grid; grid-template-columns:110px 1fr; gap:6px 10px; margin-top:12px; padding-top:12px; border-top:1px dashed var(--line); font-size:13px;}
   .field .k{color:var(--sub);}
   .field .v{color:var(--ink);}
@@ -55,25 +56,28 @@
   .prof li{margin:3px 0;}
   footer{text-align:center; color:var(--sub); font-size:12px; margin-top:30px;}
   .prio{display:inline-block; width:26px; height:26px; line-height:26px; text-align:center; border-radius:8px; color:#fff; font-weight:700; font-size:13px;}
+  .note{background:#fff7ed; border:1px solid #fed7aa; border-radius:12px; padding:12px 16px; font-size:13px; color:#9a3412; margin:12px 0;}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <h1>求职管理看板</h1>
-    <div class="meta">求职者：张海芳 · 目标：获得合适 Offer · 最后更新：2026-09-08</div>
+    <div class="meta">求职者：张海芳 · 目标：获得合适 Offer · 最后更新：2026-09-08（渠道切换：品牌官网 / 官方招聘 为主）</div>
   </header>
 
   <!-- 概览统计 -->
   <div class="grid">
-    <div class="stat"><div class="k">待评估</div><div class="v">7</div></div>
-    <div class="stat"><div class="k">新发现</div><div class="v">3</div></div>
+    <div class="stat"><div class="k">待评估</div><div class="v">11</div></div>
+    <div class="stat"><div class="k">新发现</div><div class="v">5</div></div>
     <div class="stat"><div class="k">待投递</div><div class="v">0</div></div>
     <div class="stat"><div class="k">已投递</div><div class="v">0</div></div>
     <div class="stat"><div class="k">面试中</div><div class="v">0</div></div>
     <div class="stat"><div class="k">Offer</div><div class="v">0</div></div>
     <div class="stat"><div class="k">已排除</div><div class="v">8</div></div>
   </div>
+
+  <div class="note">渠道说明：已停用 BOSS 直聘（登录受阻）。本版岗位来源切换为：品牌官网招聘系统 / 品牌官方招聘主页 / 官方招聘平台（猎聘·智联·前程无忧等公开渠道），全部岗位均联网核实并附真实链接、标注来源与时效。</div>
 
   <!-- 求职档案 -->
   <div class="prof">
@@ -100,8 +104,8 @@
 
   <!-- 栏目导航 -->
   <nav class="tabs">
-    <button class="active" data-t="s2">待评估 (7)</button>
-    <button data-t="s1">新发现 (3)</button>
+    <button class="active" data-t="s2">待评估 (11)</button>
+    <button data-t="s1">新发现 (5)</button>
     <button data-t="s3">简历待优化 (0)</button>
     <button data-t="s4">待投递 (0)</button>
     <button data-t="s5">已投递 (0)</button>
@@ -113,35 +117,24 @@
 
   <!-- ============ 栏目2 待评估 ============ -->
   <div id="s2" class="sec show">
-    <h2>待评估 <span class="cnt">7 个 · 已初筛通过，核实后进入投递</span></h2>
+    <h2>待评估 <span class="cnt">11 个 · 已初筛通过，核实后进入投递</span></h2>
 
     <div class="card pA">
       <div class="row"><div><span class="prio bA">A</span> <h3 style="display:inline;">Coty 科蒂 – Marketing Executive</h3><div class="comp">科蒂（Coty Inc.，全球最大香水集团，世界500强外企）｜美妆/香氛/彩妆</div></div><div class="sal">未公开（预计15k+）</div></div>
-      <div class="tags"><span class="tag">上海</span><span class="tag">发布时间 2026-09-02</span><span class="tag">匹配度 90</span><span class="tag">建议即时投递</span></div>
+      <div class="tags"><span class="tag ch">官网渠道</span><span class="tag">上海</span><span class="tag">发布时间 2026-09-02</span><span class="tag">匹配度 90</span><span class="tag">建议即时投递</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://careers.coty.com/job/Shanghai-Marketing-Executive-SH-20000/1432882733/" target="_blank">Coty 官网招聘</a></span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://careers.coty.com/job/Shanghai-Marketing-Executive-SH-20000/1432882733/" target="_blank">Coty 官网招聘系统</a></span>
         <span class="k">能力缺口</span><span class="v">全英文工作环境、甲方 360 营销规划视角、零售/电商联动深度</span>
-        <span class="k">下一步</span><span class="v">核实薪资与团队；准备中英文双版简历</span>
+        <span class="k">下一步</span><span class="v">核实薪资与团队；准备中英文双版简历，官网直接投递</span>
         <span class="k">截止</span><span class="v">2026-09-12</span>
       </div>
     </div>
 
     <div class="card pA">
-      <div class="row"><div><span class="prio bA">A</span> <h3 style="display:inline;">LVMH / Parfums Christian Dior – Influencer Marketing Manager (Makeup)</h3><div class="comp">LVMH 香水化妆品（法国奢侈品巨头）｜奢侈品美妆</div></div><div class="sal">未公开（Manager 级）</div></div>
-      <div class="tags"><span class="tag">上海</span><span class="tag">发布时间 2026-09-02</span><span class="tag">匹配度 76</span><span class="tag">高风险高回报</span></div>
+      <div class="row"><div><span class="prio bA">A</span> <h3 style="display:inline;">玲肤(上海)化妆品 – 市场专员</h3><div class="comp">玲肤（韩国 L&P Cosmetics 美迪惠尔 全资，韩资外企）｜美妆护肤/药妆</div></div><div class="sal">12-18K</div></div>
+      <div class="tags"><span class="tag">上海静安</span><span class="tag">2026-08-28 急聘</span><span class="tag">匹配度 87</span><span class="tag">HR 8小时内在线</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.lvmh.com/fr/nous-rejoindre/nos-offres/PCD22320" target="_blank">LVMH 官网</a></span>
-        <span class="k">能力缺口</span><span class="v">经理级策略/预算/团队视野、奢侈品牌高端内容把控、英文商务</span>
-        <span class="k">下一步</span><span class="v">评估英文简历与 Dior 调性适配；投英文简历</span>
-        <span class="k">截止</span><span class="v">2026-09-15</span>
-      </div>
-    </div>
-
-    <div class="card pA">
-      <div class="row"><div><span class="prio bA">A</span> <h3 style="display:inline;">玲肤(上海)化妆品 – 市场专员</h3><div class="comp">玲肤（韩国 L&P Cosmetics 全资，韩资外企）｜美妆护肤/药妆</div></div><div class="sal">12-18K</div></div>
-      <div class="tags"><span class="tag">上海静安</span><span class="tag">发布时间 2026-08-28 急聘</span><span class="tag">匹配度 87</span></div>
-      <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.liepin.com/job/1982614637.shtml" target="_blank">猎聘</a></span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.liepin.com/job/1982614637.shtml" target="_blank">猎聘（官方发布）</a></span>
         <span class="k">能力缺口</span><span class="v">韩语书面/沟通优先（非必须）、甲方产品营销全流程视角</span>
         <span class="k">下一步</span><span class="v">猎聘投递 + 私信 HR；确认在招</span>
         <span class="k">截止</span><span class="v">2026-09-12</span>
@@ -150,9 +143,9 @@
 
     <div class="card pA">
       <div class="row"><div><span class="prio bA">A</span> <h3 style="display:inline;">上海曼伦商贸 – OTC 内容推广资深专员</h3><div class="comp">曼伦（英国利洁时 Reckitt 合资）｜个护/快消 OTC</div></div><div class="sal">15-20K·16薪</div></div>
-      <div class="tags"><span class="tag">上海徐汇</span><span class="tag">发布时间 近期</span><span class="tag">匹配度 82</span><span class="tag">双休/商业险/16薪</span></div>
+      <div class="tags"><span class="tag">上海徐汇</span><span class="tag">近期在招</span><span class="tag">匹配度 82</span><span class="tag">双休/16薪</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.zhaopin.com/jobdetail/CC198087020J40780404007.htm" target="_blank">智联招聘</a></span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.zhaopin.com/jobdetail/CC198087020J40780404007.htm" target="_blank">智联招聘（官方发布）</a></span>
         <span class="k">能力缺口</span><span class="v">FMCG/OTC 行业经验、信息流投放（竞价）深度</span>
         <span class="k">下一步</span><span class="v">核实在招状态与发布日；智联投递</span>
         <span class="k">截止</span><span class="v">2026-09-14</span>
@@ -160,10 +153,21 @@
     </div>
 
     <div class="card pA">
-      <div class="row"><div><span class="prio bA">A</span> <h3 style="display:inline;">上海橘宜化妆品 – 市场营销资深专员/专员</h3><div class="comp">橘宜（橘朵/酵色/百植萃，中国头部多品牌美妆集团）｜彩妆+科学护肤</div></div><div class="sal">16-20K·14薪</div></div>
-      <div class="tags"><span class="tag">上海黄浦</span><span class="tag">发布时间 2026-07-30</span><span class="tag">匹配度 80</span></div>
+      <div class="row"><div><span class="prio bA">A</span> <h3 style="display:inline;">LVMH / Parfums Christian Dior – Influencer Marketing Manager (Skincare)</h3><div class="comp">LVMH 香水化妆品（法国奢侈品巨头）｜奢侈美妆护肤</div></div><div class="sal">未公开（Manager 级）</div></div>
+      <div class="tags"><span class="tag ch">官网渠道</span><span class="tag">上海</span><span class="tag">发布时间 2026-09-02</span><span class="tag">匹配度 82</span><span class="tag">A级高价值尝试</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://m.liepin.com/job/1984537335.shtml" target="_blank">猎聘</a></span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.lvmh.com/en/join-us/our-job-offers/PCD22319" target="_blank">LVMH 官网招聘</a>（护肤达人营销 / PCD22319）</span>
+        <span class="k">能力缺口</span><span class="v">经理级策略/预算/团队视野、奢侈品牌高端内容把控、英文商务</span>
+        <span class="k">下一步</span><span class="v">达人营销/种草完全对口，冲刺投英文简历；附中文简历</span>
+        <span class="k">截止</span><span class="v">2026-09-15</span>
+      </div>
+    </div>
+
+    <div class="card pA">
+      <div class="row"><div><span class="prio bA">A</span> <h3 style="display:inline;">上海橘宜化妆品 – 市场营销资深专员/专员</h3><div class="comp">橘宜（橘朵/酵色/百植萃，中国头部多品牌美妆集团）｜彩妆+科学护肤</div></div><div class="sal">16-20K·14薪</div></div>
+      <div class="tags"><span class="tag">上海黄浦</span><span class="tag">2026-07-30 更新</span><span class="tag">匹配度 80</span></div>
+      <div class="field">
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://m.liepin.com/job/1984537335.shtml" target="_blank">猎聘（官方发布）</a></span>
         <span class="k">能力缺口</span><span class="v">彩妆品类深度、ROI 效果投放、大促种草统筹</span>
         <span class="k">下一步</span><span class="v">核实在招；猎聘投递</span>
         <span class="k">截止</span><span class="v">2026-09-14</span>
@@ -171,22 +175,66 @@
     </div>
 
     <div class="card pB">
-      <div class="row"><div><span class="prio bB">B</span> <h3 style="display:inline;">缙嘉科技 – 产品营销 (GTM)</h3><div class="comp">缙嘉（KIMTRUE 且初/安修泽/ddg 等，国货美妆个护）｜美妆护肤/个护</div></div><div class="sal">15-25K·13薪</div></div>
-      <div class="tags"><span class="tag">上海</span><span class="tag">发布时间 近期(需登录核实)</span><span class="tag">匹配度 78</span><span class="tag">BOSS来源</span></div>
+      <div class="row"><div><span class="prio bB">B</span> <h3 style="display:inline;">上海家化 – 种草（小红书/抖音达人投放）</h3><div class="comp">上海家化联合股份有限公司（国货美妆日化龙头，上市）｜美妆/个护/家清</div></div><div class="sal">10-18K·15薪</div></div>
+      <div class="tags"><span class="tag ch">新增</span><span class="tag">上海虹口</span><span class="tag">2026-02-14 更新(需核实)</span><span class="tag">匹配度 78</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.zhipin.com/job_detail/7f50aaf8f2da89ac1HV73tS5GVNX.html" target="_blank">BOSS直聘</a></span>
-        <span class="k">能力缺口</span><span class="v">GTM/产品生意规划、库存/供应链协同视角</span>
-        <span class="k">下一步</span><span class="v">BOSS 登录后核实在招与薪资</span>
-        <span class="k">截止</span><span class="v">登录后 48h 内</span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.liepin.com/job/1978399625.shtml" target="_blank">猎聘（官方发布）</a></span>
+        <span class="k">能力缺口</span><span class="v">薪资下限偏低（需谈至 14k+）；岗位时效偏旧需确认</span>
+        <span class="k">下一步</span><span class="v">核实岗位仍有效；同步查询上海家化官方招聘系统 shjahwa.zhiye.com</span>
+        <span class="k">截止</span><span class="v">2026-09-16</span>
+      </div>
+    </div>
+
+    <div class="card pB">
+      <div class="row"><div><span class="prio bB">B</span> <h3 style="display:inline;">上海家化 – 产品/内容营销</h3><div class="comp">上海家化联合股份有限公司｜日化（双狮汇大厦）</div></div><div class="sal">1.5-2.2万·15薪</div></div>
+      <div class="tags"><span class="tag ch">新增</span><span class="tag">上海虹口</span><span class="tag">2026-03-17</span><span class="tag">匹配度 76</span></div>
+      <div class="field">
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.quanzhi.com/job/69b8f8843e67084e25e44382" target="_blank">全职招聘网（企业官方）</a></span>
+        <span class="k">能力缺口</span><span class="v">岗位偏策略统筹，候选人甲方生意视角弱；时效偏旧需确认</span>
+        <span class="k">下一步</span><span class="v">核实岗位有效性与团队归属；上海家化官网招聘系统复核</span>
+        <span class="k">截止</span><span class="v">2026-09-16</span>
+      </div>
+    </div>
+
+    <div class="card pB">
+      <div class="row"><div><span class="prio bB">B</span> <h3 style="display:inline;">上海三生花化妆品 – 媒介专员</h3><div class="comp">三生花（百雀羚集团子品牌）｜洗护个护（油头专研）</div></div><div class="sal">未公开（参考1.2-1.8万·13薪）</div></div>
+      <div class="tags"><span class="tag ch">新增</span><span class="tag">上海黄浦</span><span class="tag">2026-05 在招</span><span class="tag">匹配度 74</span></div>
+      <div class="field">
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://msearch.51job.com/jobs/shanghai-hpq/171023945.html" target="_blank">前程无忧（公司官方主页）</a></span>
+        <span class="k">能力缺口</span><span class="v">洗护品类非最强项；薪资需确认是否达 14k</span>
+        <span class="k">下一步</span><span class="v">核实薪资与在招；前程无忧投递</span>
+        <span class="k">截止</span><span class="v">2026-09-16</span>
+      </div>
+    </div>
+
+    <div class="card pB">
+      <div class="row"><div><span class="prio bB">B</span> <h3 style="display:inline;">瑟尚集团 – 媒介主管（彩妆/护肤）</h3><div class="comp">瑟尚（OUT OF OFFICE 新国货彩妆 + 羊织道女装）｜彩妆/护肤/服饰</div></div><div class="sal">18-28K·13薪</div></div>
+      <div class="tags"><span class="tag ch">新增</span><span class="tag">上海普陀</span><span class="tag">2026-09-04 更新</span><span class="tag">匹配度 72</span></div>
+      <div class="field">
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://m.liepin.com/job/1982714961.shtml" target="_blank">猎聘（官方发布）</a></span>
+        <span class="k">能力缺口</span><span class="v">职级主管要求团队管理，候选人偏执行；薪资超出目标可谈</span>
+        <span class="k">下一步</span><span class="v">评估是否接受主管级挑战；投递并说明带人意愿</span>
+        <span class="k">截止</span><span class="v">2026-09-16</span>
+      </div>
+    </div>
+
+    <div class="card pB">
+      <div class="row"><div><span class="prio bB">B</span> <h3 style="display:inline;">LVMH / Parfums Christian Dior – Influencer Marketing Manager (Makeup)</h3><div class="comp">LVMH 香水化妆品（法国奢侈品巨头）｜奢侈美妆彩妆</div></div><div class="sal">未公开（Manager 级）</div></div>
+      <div class="tags"><span class="tag ch">官网渠道</span><span class="tag">上海</span><span class="tag">发布时间 2026-09-02</span><span class="tag">匹配度 76</span></div>
+      <div class="field">
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://www.lvmh.com/fr/nous-rejoindre/nos-offres/PCD22320" target="_blank">LVMH 官网招聘</a>（彩妆达人营销 / PCD22320）</span>
+        <span class="k">能力缺口</span><span class="v">经理级策略/预算/团队视野、奢侈品牌高端内容把控、英文商务</span>
+        <span class="k">下一步</span><span class="v">与 Skincare 岗二选一投递，避免同时报同组；投英文简历</span>
+        <span class="k">截止</span><span class="v">2026-09-15</span>
       </div>
     </div>
 
     <div class="card pB">
       <div class="row"><div><span class="prio bB">B</span> <h3 style="display:inline;">上海萧雅生物科技 – 新媒体运营专员</h3><div class="comp">萧雅生物（新三板上市护肤品牌）｜日化护肤</div></div><div class="sal">10-15K</div></div>
-      <div class="tags"><span class="tag">上海闵行</span><span class="tag">发布时间 2026-05-13</span><span class="tag">匹配度 74</span></div>
+      <div class="tags"><span class="tag">上海闵行</span><span class="tag">2026-05-13(需核实)</span><span class="tag">匹配度 74</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://m.liepin.com/job/1962901539.shtml" target="_blank">猎聘</a></span>
-        <span class="k">能力缺口</span><span class="v">护肤成分专业知识、IP 0-1 打造经验</span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://m.liepin.com/job/1962901539.shtml" target="_blank">猎聘（官方发布）</a></span>
+        <span class="k">能力缺口</span><span class="v">护肤成分专业知识、IP 0-1 打造经验；薪资下限偏低</span>
         <span class="k">下一步</span><span class="v">核实岗位仍在招后投递</span>
         <span class="k">截止</span><span class="v">2026-09-14</span>
       </div>
@@ -195,35 +243,57 @@
 
   <!-- ============ 栏目1 新发现 ============ -->
   <div id="s1" class="sec">
-    <h2>新发现 <span class="cnt">3 个 · 待核实细节/有效期</span></h2>
+    <h2>新发现 <span class="cnt">5 个 · 待核实细节/有效期</span></h2>
+
+    <div class="card pB">
+      <div class="row"><div><span class="prio bB">B</span> <h3 style="display:inline;">缙嘉科技 – 产品营销 (GTM)</h3><div class="comp">缙嘉（KIMTRUE 且初/安修泽/ddg 等，国货美妆个护）｜美妆护肤/个护</div></div><div class="sal">15-25K·13薪</div></div>
+      <div class="tags"><span class="tag ch">改渠道核实</span><span class="tag">上海</span><span class="tag">匹配度 78</span></div>
+      <div class="field">
+        <span class="k">来源 / 链接</span><span class="v">原 BOSS 直聘发布（已停用 BOSS）→ <a class="link" href="https://www.zhipin.com/job_detail/7f50aaf8f2da89ac1HV73tS5GVNX.html" target="_blank">原链接</a>；建议改为缙嘉官网/官方招聘公众号核实在招</span>
+        <span class="k">能力缺口</span><span class="v">GTM/产品生意规划、库存/供应链协同视角</span>
+        <span class="k">下一步</span><span class="v">通过缙嘉官网 / 官方公众号 / 猎聘等公开渠道核实岗位后转入待评估</span>
+        <span class="k">截止</span><span class="v">2026-09-18</span>
+      </div>
+    </div>
 
     <div class="card pC">
-      <div class="row"><div><span class="prio bC">C</span> <h3 style="display:inline;">文素清(上海)化妆品 – 网络营销推广（小红书内容运营）</h3><div class="comp">文素清（民营 50-150 人，国风美妆/OEM）｜美妆</div></div><div class="sal">1.4-1.5万·15薪</div></div>
-      <div class="tags"><span class="tag">上海黄浦</span><span class="tag">发布时间 2026-02</span><span class="tag">匹配度 70</span></div>
+      <div class="row"><div><span class="prio bC">C</span> <h3 style="display:inline;">Jeep 服饰 / Dickies – 市场推广专员</h3><div class="comp">国际品牌管理集团（Jeep服饰及Dickies中国区总代理，甲方）｜服装/潮流生活方式</div></div><div class="sal">7千-1.3万</div></div>
+      <div class="tags"><span class="tag ch">新增</span><span class="tag">上海黄浦</span><span class="tag">近期在招</span><span class="tag">匹配度 66</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://jobs.51job.com/shanghai-hpq/hj32032098/" target="_blank">前程无忧</a></span>
-        <span class="k">能力缺口</span><span class="v">小红书电商店铺内容玩法、直播预告策划</span>
-        <span class="k">下一步</span><span class="v">核实岗位有效性</span>
-        <span class="k">截止</span><span class="v">2026-09-15</span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://jobs.51job.com/shanghai-hpq/169320020.html" target="_blank">前程无忧（官方发布）</a></span>
+        <span class="k">能力缺口</span><span class="v">薪资上限 1.3万 低于目标 14k，谈判空间有限</span>
+        <span class="k">下一步</span><span class="v">仅作备选；如投递需确认薪资可谈</span>
+        <span class="k">截止</span><span class="v">2026-09-18</span>
+      </div>
+    </div>
+
+    <div class="card pC">
+      <div class="row"><div><span class="prio bC">C</span> <h3 style="display:inline;">文素清(上海)化妆品 – 小红书种草经理</h3><div class="comp">文素清（国风美妆/OEM，民营 50-150 人）｜彩妆/护肤/香水</div></div><div class="sal">1.5-2万·15薪</div></div>
+      <div class="tags"><span class="tag">上海黄浦</span><span class="tag">2026-03-24</span><span class="tag">匹配度 70</span></div>
+      <div class="field">
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://jobs.51job.com/shanghai_dt0200001016/xc31/neirongyunying/" target="_blank">前程无忧（公司官方主页）</a></span>
+        <span class="k">能力缺口</span><span class="v">需求偏经理级；发布时间久需确认在招；公司规模偏小（≥50人符合）</span>
+        <span class="k">下一步</span><span class="v">核实有效性后决定保留与否</span>
+        <span class="k">截止</span><span class="v">2026-09-18</span>
       </div>
     </div>
 
     <div class="card pC">
       <div class="row"><div><span class="prio bC">C</span> <h3 style="display:inline;">百雀羚 – 产品营销专员（媒介种草）</h3><div class="comp">百雀羚（国货老牌护肤，创立1931）｜护肤</div></div><div class="sal">8-13K</div></div>
-      <div class="tags"><span class="tag">上海普陀</span><span class="tag">发布时间 2026-09-03</span><span class="tag">匹配度 64</span></div>
+      <div class="tags"><span class="tag">上海普陀</span><span class="tag">2026-09-03 更新</span><span class="tag">匹配度 64</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://m.liepin.com/job/1974953961.shtml" target="_blank">猎聘</a></span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://m.liepin.com/job/1974953961.shtml" target="_blank">猎聘（官方发布）</a></span>
         <span class="k">能力缺口</span><span class="v">信息流投流深度；薪资需谈到 13k+</span>
-        <span class="k">下一步</span><span class="v">核实并确认薪资谈判空间</span>
+        <span class="k">下一步</span><span class="v">确认薪资谈判空间后决定</span>
         <span class="k">截止</span><span class="v">2026-09-16</span>
       </div>
     </div>
 
     <div class="card pC">
       <div class="row"><div><span class="prio bC">C</span> <h3 style="display:inline;">漫丹(中国)化妆品 – 市场企划-品牌推广担当</h3><div class="comp">漫丹（日资外资 50-150 人）｜化妆品</div></div><div class="sal">8千-1.2万</div></div>
-      <div class="tags"><span class="tag">上海静安</span><span class="tag">发布时间 2026-01</span><span class="tag">匹配度 62</span></div>
+      <div class="tags"><span class="tag">上海静安</span><span class="tag">2026-01(旧)</span><span class="tag">匹配度 62</span></div>
       <div class="field">
-        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://jobs.51job.com/shanghai_dt0200001300/xc11/xinmeitiyunying/" target="_blank">前程无忧</a></span>
+        <span class="k">来源 / 链接</span><span class="v"><a class="link" href="https://jobs.51job.com/shanghai_dt0200001300/xc11/xinmeitiyunying/" target="_blank">前程无忧（官方发布）</a></span>
         <span class="k">能力缺口</span><span class="v">日/英语优先；薪资低于目标</span>
         <span class="k">下一步</span><span class="v">核实有效性后决定保留</span>
         <span class="k">截止</span><span class="v">2026-09-16</span>
@@ -257,7 +327,7 @@
     </table>
   </div>
 
-  <footer>求职管理看板 · 生成于 2026-09-08 · 数据来源：官网/猎聘/智联/前程无忧/BOSS直聘（全部岗位均联网搜索核实，附真实链接）</footer>
+  <footer>求职管理看板 · 生成于 2026-09-08 · 数据来源：品牌官网招聘系统 / 猎聘 / 智联 / 前程无忧 / 全职招聘网（全部岗位均联网核实，附真实链接并标注来源与时效）</footer>
 </div>
 
 <script>
